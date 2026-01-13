@@ -3,7 +3,7 @@
 ## Docker
 Install Symfony
 ```bash
-docker run --rm -v $(pwd):/app composer create-project symfony/skeleton:"6.*" . --prefer-dist --no-interaction
+docker run --rm --user 1000:1000 -v $(pwd):/app composer create-project symfony/skeleton:"6.*" . --prefer-dist --no-interaction
 ```
 
 Run PHP
